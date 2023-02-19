@@ -1,0 +1,872 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlayWave",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "PlayWave"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "PlayWave"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WavePlayerDelegate",
+        "printedName": "WavePlayerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didFinishPlaying",
+            "printedName": "didFinishPlaying()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlayWave0B14PlayerDelegateP16didFinishPlayingyyF",
+            "mangledName": "$s8PlayWave0B14PlayerDelegateP16didFinishPlayingyyF",
+            "moduleName": "PlayWave",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlayWave.WavePlayerDelegate>",
+            "sugared_genericSig": "<Self where Self : PlayWave.WavePlayerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "failedWithError",
+            "printedName": "failedWithError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlayWave0B14PlayerDelegateP15failedWithErroryys0G0_pF",
+            "mangledName": "$s8PlayWave0B14PlayerDelegateP15failedWithErroryys0G0_pF",
+            "moduleName": "PlayWave",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlayWave.WavePlayerDelegate>",
+            "sugared_genericSig": "<Self where Self : PlayWave.WavePlayerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishedLoading",
+            "printedName": "finishedLoading()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlayWave0B14PlayerDelegateP15finishedLoadingyyF",
+            "mangledName": "$s8PlayWave0B14PlayerDelegateP15finishedLoadingyyF",
+            "moduleName": "PlayWave",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlayWave.WavePlayerDelegate>",
+            "sugared_genericSig": "<Self where Self : PlayWave.WavePlayerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8PlayWave0B14PlayerDelegateP",
+        "mangledName": "$s8PlayWave0B14PlayerDelegateP",
+        "moduleName": "PlayWave",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WavePlayer",
+        "printedName": "WavePlayer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlayWave.WavePlayerDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WavePlayerDelegate",
+                    "printedName": "PlayWave.WavePlayerDelegate",
+                    "usr": "s:8PlayWave0B14PlayerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvp",
+            "mangledName": "$s8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvp",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PlayWave.WavePlayerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WavePlayerDelegate",
+                        "printedName": "PlayWave.WavePlayerDelegate",
+                        "usr": "s:8PlayWave0B14PlayerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvg",
+                "mangledName": "$s8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvg",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PlayWave.WavePlayerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WavePlayerDelegate",
+                        "printedName": "PlayWave.WavePlayerDelegate",
+                        "usr": "s:8PlayWave0B14PlayerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvs",
+                "mangledName": "$s8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvs",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvM",
+                "mangledName": "$s8PlayWave0B6PlayerC8delegateAA0bC8Delegate_pSgvM",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "controlsColor",
+            "printedName": "controlsColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PlayWave@objc(cs)WavePlayer(py)controlsColor",
+            "mangledName": "$s8PlayWave0B6PlayerC13controlsColorSo7UIColorCvp",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "IBInspectable",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PlayWave@objc(cs)WavePlayer(im)controlsColor",
+                "mangledName": "$s8PlayWave0B6PlayerC13controlsColorSo7UIColorCvg",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PlayWave@objc(cs)WavePlayer(im)setControlsColor:",
+                "mangledName": "$s8PlayWave0B6PlayerC13controlsColorSo7UIColorCvs",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC13controlsColorSo7UIColorCvM",
+                "mangledName": "$s8PlayWave0B6PlayerC13controlsColorSo7UIColorCvM",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "volume",
+            "printedName": "volume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PlayWave0B6PlayerC6volumeSfvp",
+            "mangledName": "$s8PlayWave0B6PlayerC6volumeSfvp",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC6volumeSfvg",
+                "mangledName": "$s8PlayWave0B6PlayerC6volumeSfvg",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC6volumeSfvs",
+                "mangledName": "$s8PlayWave0B6PlayerC6volumeSfvs",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC6volumeSfvM",
+                "mangledName": "$s8PlayWave0B6PlayerC6volumeSfvM",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "willStartPlayingWhenReady",
+            "printedName": "willStartPlayingWhenReady",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvp",
+            "mangledName": "$s8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvp",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvg",
+                "mangledName": "$s8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvg",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvs",
+                "mangledName": "$s8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvs",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvM",
+                "mangledName": "$s8PlayWave0B6PlayerC25willStartPlayingWhenReadySbvM",
+                "moduleName": "PlayWave",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WavePlayer",
+                "printedName": "PlayWave.WavePlayer",
+                "usr": "c:@M@PlayWave@objc(cs)WavePlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PlayWave@objc(cs)WavePlayer(im)initWithFrame:",
+            "mangledName": "$s8PlayWave0B6PlayerC5frameACSo6CGRectV_tcfc",
+            "moduleName": "PlayWave",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlayWave.WavePlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WavePlayer",
+                    "printedName": "PlayWave.WavePlayer",
+                    "usr": "c:@M@PlayWave@objc(cs)WavePlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PlayWave@objc(cs)WavePlayer(im)initWithCoder:",
+            "mangledName": "$s8PlayWave0B6PlayerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "PlayWave",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configureVideoWith",
+            "printedName": "configureVideoWith(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlayWave0B6PlayerC18configureVideoWith3urly10Foundation3URLV_tF",
+            "mangledName": "$s8PlayWave0B6PlayerC18configureVideoWith3urly10Foundation3URLV_tF",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeValue",
+            "printedName": "observeValue(forKeyPath:of:change:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueChangeKey",
+                        "printedName": "Foundation.NSKeyValueChangeKey",
+                        "usr": "c:@T@NSKeyValueChangeKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutableRawPointer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutableRawPointer",
+                    "printedName": "Swift.UnsafeMutableRawPointer",
+                    "usr": "s:Sv"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PlayWave@objc(cs)WavePlayer(im)observeValueForKeyPath:ofObject:change:context:",
+            "mangledName": "$s8PlayWave0B6PlayerC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeye6ChangeG0aypGSgSvSgtF",
+            "moduleName": "PlayWave",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlayWave0B6PlayerC5pauseyyF",
+            "mangledName": "$s8PlayWave0B6PlayerC5pauseyyF",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PlayWave0B6PlayerC4playyyF",
+            "mangledName": "$s8PlayWave0B6PlayerC4playyyF",
+            "moduleName": "PlayWave",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gestureRecognizer",
+            "printedName": "gestureRecognizer(_:shouldReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIGestureRecognizer",
+                "printedName": "UIKit.UIGestureRecognizer",
+                "usr": "c:objc(cs)UIGestureRecognizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITouch",
+                "printedName": "UIKit.UITouch",
+                "usr": "c:objc(cs)UITouch"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PlayWave@objc(cs)WavePlayer(im)gestureRecognizer:shouldReceiveTouch:",
+            "mangledName": "$s8PlayWave0B6PlayerC17gestureRecognizer_13shouldReceiveSbSo09UIGestureE0C_So7UITouchCtF",
+            "moduleName": "PlayWave",
+            "objc_name": "gestureRecognizer:shouldReceiveTouch:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PlayWave@objc(cs)WavePlayer",
+        "mangledName": "$s8PlayWave0B6PlayerC",
+        "moduleName": "PlayWave",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "IBDesignable",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/syberexpertise\/Desktop\/PlayWave\/PlayWave\/Source\/PlayerView\/WavePlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1103,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/syberexpertise\/Desktop\/PlayWave\/PlayWave\/Source\/PlayerView\/WavePlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1237,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

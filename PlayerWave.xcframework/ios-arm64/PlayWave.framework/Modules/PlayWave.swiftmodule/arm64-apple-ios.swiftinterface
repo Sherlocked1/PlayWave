@@ -1,0 +1,38 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PlayWave
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+@_exported import PlayWave
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public protocol WavePlayerDelegate {
+  func didFinishPlaying()
+  func failedWithError(_ error: Swift.Error)
+  func finishedLoading()
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class WavePlayer : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var delegate: PlayWave.WavePlayerDelegate?
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var controlsColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var volume: Swift.Float {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var willStartPlayingWhenReady: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func configureVideoWith(url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor(unsafe) public func pause()
+  @_Concurrency.MainActor(unsafe) public func play()
+  @objc deinit
+}
+extension PlayWave.WavePlayer : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}

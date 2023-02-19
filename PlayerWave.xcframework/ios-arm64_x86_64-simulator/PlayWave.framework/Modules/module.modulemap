@@ -1,0 +1,11 @@
+framework module PlayWave {
+  umbrella header "PlayWave.h"
+
+  export *
+  module * { export * }
+}
+
+module PlayWave.Swift {
+  header "PlayWave-Swift.h"
+  requires objc
+}
